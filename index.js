@@ -4,12 +4,9 @@ const token = '445138642:AAFLiCODZoPEXR9mAznxd5cfWkJwcTuMvgc';
 
 const bot = new TelegramBot(token, { polling: true });
 
-//const hel=["Дарова","Здарова","Хай","Гутен Так"];
-
 bot.onText(/^\/start/, (msg, match) => {
-
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId,"Привет , друг.");
+    bot.sendMessage(chatId,"Привет, дорогой друг.");
     bot.sendMessage(chatId, "Давай знакомится?");
 });
 bot.onText(/^Давай|Го$/, (msg, match) => {
